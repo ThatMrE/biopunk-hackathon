@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Format — Biopunk Lab</title>
+<meta name="description" content="The Biopunk format: a prototype weekend to pitch an experiment, a week of real BSL-1 lab access to run it, and a demo day to present living data to judges.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=JetBrains+Mono:wght@400;500;700&family=Permanent+Marker&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>☣</text></svg>">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="brand">
+      <svg class="brand__mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1.5" y="1.5" width="37" height="37" rx="8" fill="#0c0f07" stroke="#b8f21a" stroke-width="1.4"/><g stroke="#b8f21a" stroke-width="2" stroke-linecap="round"><path d="M20 20 20 12.5M20 20 13.2 24.8M20 20 26.8 24.8"/></g><g fill="#b8f21a"><circle cx="20" cy="20" r="2.4"/><circle cx="20" cy="11.5" r="3.3"/><circle cx="12.4" cy="25.3" r="3.3"/><circle cx="27.6" cy="25.3" r="3.3"/></g></svg>
+      <span class="brand__txt"><span class="bio">BIOPUNK</span><span class="lab">LAB</span></span>
+    </a>
+    <button class="menu-btn" onclick="document.getElementById('nl').classList.toggle('show')">☰</button>
+    <div class="nav__links" id="nl">
+      <a href="index.html">Home</a>
+      <a href="format.html" class="active">Format</a>
+      <a href="tracks.html">Tracks</a>
+      <a href="host.html">Host Yours</a>
+      <a href="manifesto.html">Why Biopunk</a>
+      <a href="get-involved.html">Join</a>
+      <a href="faq.html">FAQ</a>
+      <a href="host.html" class="btn btn--primary btn--sm">Plug In →</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" style="padding-bottom:34px">
+  <div class="wrap">
+    <span class="kicker">The_process</span>
+    <h1>Two weekends,<br><span class="hl">bridged by a real lab week.</span></h1>
+    <p class="hero__sub">Most "biohackathons" are 48 hours of slideware. Biopunk's edge is the subsidized lab week in the middle — the part that turns a pitch into a living result. Three phases of escalating mutation.</p>
+  </div>
+</header>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="phases">
+      <div class="phase">
+        <span class="phase__no">01</span><span class="phase__tag">Weekend One</span>
+        <div class="phase__when">Fri eve → Sun · 2 days</div>
+        <h3>Prototype &amp; Pitch</h3>
+        <p>The petri dish. Form teams, ideate against the tracks, and pitch a one-week experiment.</p>
+        <ul>
+          <li>Kickoff + team-formation mixer</li>
+          <li>Workshops: ideation, feasibility, biosafety, pitching</li>
+          <li>Sunday pitch to a panel — judges screen feasibility, novelty &amp; safety</li>
+          <li>Green-lit pitches unlock lab access + in-kind reagents</li>
+        </ul>
+      </div>
+      <div class="phase">
+        <span class="phase__no">02</span><span class="phase__tag">The Week</span>
+        <div class="phase__when">Mon → Fri · 5–7 days</div>
+        <h3>Lab Week</h3>
+        <p>Survivors enter the lab. Real bench time, mentorship, and sponsored reagents.</p>
+        <ul>
+          <li>Pre-ordered DNA + a stock parts kit ready on day one</li>
+          <li>In-kind: reagents, sequencing, compute, equipment time</li>
+          <li>Mentor office hours + a lab safety officer on site</li>
+          <li>One Design–Build–Test–Learn cycle to a proof-of-concept</li>
+        </ul>
+      </div>
+      <div class="phase">
+        <span class="phase__no">03</span><span class="phase__tag">Weekend Two</span>
+        <div class="phase__when">Sat · judgement day</div>
+        <h3>Demo Day</h3>
+        <p>Present living data + a plan to the tribunal. Strongest specimens survive.</p>
+        <ul>
+          <li>Science-fair-style expo; each team seen by ≥3 judges</li>
+          <li>Rubric: rigor, feasibility, novelty, responsibility, story</li>
+          <li>Prizes: cash, in-kind loot, follow-on, talent intros</li>
+          <li>Projects documented into the public gallery</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section anchor" id="concept">
+  <div class="wrap">
+    <span class="kicker">Phase_01</span>
+    <h2>The Prototype Weekend</h2>
+    <p class="lead">Two days to turn a room of strangers into teams with a plan that's actually runnable at a BSL-1 bench in a week. Scope discipline here is the single biggest predictor of whether a team ships.</p>
+    <div class="grid grid-2" style="margin-top:34px">
+      <div class="card">
+        <h3>What happens</h3>
+        <ul class="check">
+          <li>Friday: opening, tracks drop (e.g. Longevity × AI, Biosecurity, Wet-Lab Systems), team-formation mixer.</li>
+          <li>Saturday: ideation + feasibility workshops, mentor scoping, a "can you build this in a week?" gut-check with a lab lead.</li>
+          <li>Sunday: pitches to a panel; feedback; accepted teams matched to bench slots and reagent budgets.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Why the pitch is a gate</h3>
+        <p>The pitch review is also the <strong>safety and feasibility gate</strong>. Judges and the lab's safety officer screen every proposal before it touches a bench — ruling out anything human-subject, clinical, animal, gain-of-function, or beyond BSL-1. A green-lit pitch is a promise the experiment is buildable, safe, and legal.</p>
+      </div>
+    </div>
+    <div class="note note--warn">
+      <span class="kicker" style="color:var(--amber)">Lock this in on Sunday</span>
+      Custom DNA takes days to arrive. The moment a pitch is accepted, its synthesis order goes in — so reagents land on <strong>day one</strong> of the lab week instead of day four. This one decision is the difference between a real result and a failed build.
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section anchor" id="labweek" style="background:var(--bg-2)">
+  <div class="wrap">
+    <span class="kicker">Phase_02</span>
+    <h2>The Lab Week</h2>
+    <p class="lead">The part nobody else does. Real bench access at a licensed BSL-1 lab — at Biopunk Lab HQ that's Frontier Tower's wet-lab floor, with $500k+ of gear — while sponsors cover the reagents that would otherwise make it impossible. A realistic one-cycle timeline:</p>
+    <div class="timeline" style="margin-top:34px">
+      <div class="tl"><div class="tl__when">Day 1 · Mon</div><h4>Setup &amp; prep</h4><p>Pre-arrived synthetic DNA and the stock parts kit are waiting. Prep competent cells and media; finalize the build plan with a mentor.</p></div>
+      <div class="tl"><div class="tl__when">Day 2–3 · Tue–Wed</div><h4>Build</h4><p>Assembly (Golden Gate / Gibson / restriction–ligation), transformation, overnight growth, colony picks and minipreps.</p></div>
+      <div class="tl"><div class="tl__when">Day 4 · Thu</div><h4>Validate</h4><p>Send constructs for ~$15 overnight whole-plasmid sequencing. Set up the functional assay.</p></div>
+      <div class="tl"><div class="tl__when">Day 5 · Fri</div><h4>Test &amp; read out</h4><p>Confirm sequences; run the reporter / growth / biosensor assay; collect the data that becomes the demo.</p></div>
+      <div class="tl"><div class="tl__when">Weekend</div><h4>Analyze &amp; tell the story</h4><p>Plot results, build the demo, frame what you learned and what's next.</p></div>
+    </div>
+    <div class="grid grid-2" style="margin-top:40px">
+      <div class="card">
+        <div class="card__ico">✓</div>
+        <h3>Buildable in a week</h3>
+        <ul class="check" style="margin-top:6px">
+          <li>PCR, molecular cloning, bacterial/yeast transformation</li>
+          <li>Miniprep + overnight sequence validation</li>
+          <li>Small-scale reporter/protein expression &amp; fluorescence assays</li>
+          <li>Simple biosensor prototypes; growth/inhibition assays</li>
+          <li>Basic CRISPR editing in bacteria or yeast</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card__ico" style="background:rgba(201,33,93,.12);border-color:rgba(201,33,93,.3);color:var(--blood)">✕</div>
+        <h3>Ruled out at the gate</h3>
+        <ul class="check cross" style="margin-top:6px">
+          <li>Mammalian stable cell lines; animal or mouse work</li>
+          <li>Human subjects — including self-experimentation</li>
+          <li>Directed evolution / multi-week passaging</li>
+          <li>Large-scale fermentation; structural biology</li>
+          <li>Anything above BSL-1, clinical, or select-agent</li>
+        </ul>
+      </div>
+    </div>
+    <div class="note">
+      <span class="kicker">The deliverable</span>
+      The demo-day output is a <strong>proof-of-concept plus a plan</strong> — "the construct expresses / the strain grows / the sensor lights up" — not a finished product. iGEM's Design–Build–Test–Learn cycle, compressed into one honest sprint.
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section anchor" id="demoday">
+  <div class="wrap">
+    <span class="kicker kicker--blood">Phase_03</span>
+    <h2>Demo Day</h2>
+    <p class="lead">The second weekend. Teams present living data to the tribunal — founders, investigators, and operators from the local bio scene. Run it science-fair style: teams at numbered stations, judges circulating, every project seen by at least three.</p>
+    <div class="grid grid-3" style="margin-top:34px">
+      <div class="card"><div class="card__num">Rubric</div><h3>How judges score</h3><p><b>Rigor</b> · did the data show what they claim?<br><b>Feasibility</b> · is the next step real?<br><b>Novelty</b> · is the idea fresh?<br><b>Responsibility</b> · biosafety &amp; societal thinking.<br><b>Story</b> · can they make you care in 3 minutes?</p></div>
+      <div class="card"><div class="card__num">Prizes</div><h3>You get paid</h3><p>Cash, in-kind bundles (sequencing runs, lab membership, glow plants, equipment time), follow-on micro-grants, and warm intros into the talent network. Value flows to the builder.</p></div>
+      <div class="card"><div class="card__num">After</div><h3>Kept forever</h3><p>Every project is written up into the public gallery — a permanent portfolio piece with the data, the team, and the code. A résumé line that links to a real result.</p></div>
+    </div>
+    <div class="note note--blood">
+      <span class="kicker kicker--blood">The whole point</span>
+      In iGEM, a team pays ~€8,000+ and travels to a single Jamboree. In Biopunk, the same demo-day energy happens locally, repeatably, and the prize money moves <strong>toward</strong> the participants. Same talent-pipeline outcome, inverted economics.
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="cta-band">
+      <h2>Ready to run this?</h2>
+      <p>The host kit turns this format into a step-by-step playbook — timeline, budget, sponsors, safety, and judging, all reframed for the wet lab.</p>
+      <a href="host.html" class="btn btn--primary">Open the host kit →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <a href="index.html" class="brand" style="margin-bottom:14px">
+          <svg class="brand__mark" viewBox="0 0 40 40" fill="none"><rect x="1.5" y="1.5" width="37" height="37" rx="8" fill="#0c0f07" stroke="#b8f21a" stroke-width="1.4"/><g stroke="#b8f21a" stroke-width="2" stroke-linecap="round"><path d="M20 20 20 12.5M20 20 13.2 24.8M20 20 26.8 24.8"/></g><g fill="#b8f21a"><circle cx="20" cy="20" r="2.4"/><circle cx="20" cy="11.5" r="3.3"/><circle cx="12.4" cy="25.3" r="3.3"/><circle cx="27.6" cy="25.3" r="3.3"/></g></svg>
+          <span class="brand__txt"><span class="bio">BIOPUNK</span><span class="lab">LAB</span></span>
+        </a>
+        <p class="footer__note">Get paid to build biology. No PhD, no entry fee, ever. Curiosity &gt; credentials.</p>
+      </div>
+      <div><h5>Explore</h5><a href="format.html">The Format</a><a href="tracks.html">Tracks</a><a href="host.html">Host Yours</a><a href="manifesto.html">Why Biopunk</a><a href="faq.html">FAQ</a></div>
+      <div><h5>Organizers</h5><a href="host.html#timeline">Timeline</a><a href="host.html#sponsorship">In-kind sponsorship</a><a href="host.html#safety">Biosafety</a><a href="host.html#judging">Judging</a></div>
+      <div><h5>Connect</h5><a href="https://discord.gg/RqJb58Fh" target="_blank" rel="noopener">Discord</a><a href="https://www.biopunklab.com/" target="_blank" rel="noopener">biopunklab.com</a><a href="get-involved.html">Join the movement</a></div>
+    </div>
+    <div class="footer__base"><span>© 2026 Biopunk Lab — all organisms reserved</span><span>Built on the shoulders of MLH + iGEM</span></div>
+  </div>
+</footer>
+
+</body>
+</html>

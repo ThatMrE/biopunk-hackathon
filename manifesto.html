@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Biopunk — Manifesto</title>
+<meta name="description" content="Why biohackathons beat iGEM: participants get paid instead of paying, no PhD or faculty sponsor required, and every project becomes a portfolio piece. The movement to give biology a portfolio culture like software.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=JetBrains+Mono:wght@400;500;700&family=Permanent+Marker&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>☣</text></svg>">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="brand">
+      <svg class="brand__mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1.5" y="1.5" width="37" height="37" rx="8" fill="#0c0f07" stroke="#b8f21a" stroke-width="1.4"/><g stroke="#b8f21a" stroke-width="2" stroke-linecap="round"><path d="M20 20 20 12.5M20 20 13.2 24.8M20 20 26.8 24.8"/></g><g fill="#b8f21a"><circle cx="20" cy="20" r="2.4"/><circle cx="20" cy="11.5" r="3.3"/><circle cx="12.4" cy="25.3" r="3.3"/><circle cx="27.6" cy="25.3" r="3.3"/></g></svg>
+      <span class="brand__txt"><span class="bio">BIOPUNK</span><span class="lab">LAB</span></span>
+    </a>
+    <button class="menu-btn" onclick="document.getElementById('nl').classList.toggle('show')">☰</button>
+    <div class="nav__links" id="nl">
+      <a href="index.html">Home</a>
+      <a href="format.html">Format</a>
+      <a href="tracks.html">Tracks</a>
+      <a href="host.html">Host Yours</a>
+      <a href="manifesto.html" class="active">Why Biopunk</a>
+      <a href="get-involved.html">Join</a>
+      <a href="faq.html">FAQ</a>
+      <a href="host.html" class="btn btn--primary btn--sm">Plug In →</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" style="padding-bottom:34px">
+  <div class="wrap">
+    <span class="kicker kicker--blood">Manifesto</span>
+    <h1>Biology deserves a <span class="hl">portfolio culture.</span></h1>
+    <p class="hero__sub">Software built a whole meritocracy on projects you can show. You learn by building, you build in public, and the work speaks louder than the diploma. Biology never got that on-ramp. Biopunk is the movement to build it.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <span class="kicker">The_gap</span>
+    <h2>In code, you can prove yourself. In biology, you need permission.</h2>
+    <div class="grid grid-2" style="margin-top:32px">
+      <div class="card">
+        <h3>How software works</h3>
+        <p>Almost every programmer is partly self-taught. You can learn free, build projects at hackathons, stack them into a public GitHub, and get hired on the strength of what you shipped. The portfolio <em>is</em> the credential. Hackathons were the engine that normalized it — a weekend, a team, a demo, a prize.</p>
+      </div>
+      <div class="card" style="border-color:rgba(201,33,93,.35)">
+        <h3>How biology works</h3>
+        <p>To touch a bench, you historically needed a lab, a faculty sponsor, and usually a PhD. The knowledge is learnable — the <em>access</em> is gated. As one bioinformatician put it, academia can feel like "an elitist community where you barely get taken seriously without a PhD." The curiosity was never the barrier. The keycard was.</p>
+      </div>
+    </div>
+    <div class="note">
+      <span class="kicker">The pieces already exist</span>
+      Community labs offer BSL-1 benches for $10–100/month. GitHub is increasingly a "digital lab bench." Cheap open hardware and $15 sequencing exist. The raw materials for a portfolio culture in biology are all here — <strong>nobody had assembled them into a repeatable on-ramp.</strong> That's the whole job.
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section" style="background:var(--bg-2)">
+  <div class="wrap">
+    <span class="kicker kicker--blood">The_incumbent</span>
+    <h2>iGEM proved the thesis — then priced it out.</h2>
+    <p class="lead">Give iGEM its due: over 20 years it turned hands-on synthetic biology into a talent pipeline. 100,000+ alumni. 300+ ventures — Ginkgo Bioworks, Benchling, Opentrons, Asimov — trace back to it. It showed the world that team-based, project-based synbio creates scientists, portfolios, and companies. The outcomes are exactly what Biopunk wants. The <em>access model</em> is the problem.</p>
+    <table class="cmp">
+      <thead><tr><th>&nbsp;</th><th>iGEM</th><th>Biopunk</th></tr></thead>
+      <tbody>
+        <tr><td>Money flow</td><td>Students <strong>pay</strong>: ~€7,700–€8,700 in team fees (Stage I €4,950–€5,950 + Stage II €2,750) <em>before travel</em>; realistic all-in $15k–$50k+ per team</td><td class="col-punk">Participants <strong>get paid</strong> — cash, in-kind reagents, follow-on funding</td></tr>
+        <tr><td>The gate</td><td>Requires a faculty Principal Investigator + an institutional lab</td><td class="col-punk">Open to anyone; hosted at licensed community labs</td></tr>
+        <tr><td>Credential</td><td>A PhD-adjacent sponsor is effectively mandatory</td><td class="col-punk">No PhD — your results are the credential</td></tr>
+        <tr><td>Timeline</td><td>Year-long; a single annual Jamboree in Paris</td><td class="col-punk">Two weekends + a lab week; repeatable anywhere</td></tr>
+        <tr><td>Jamboree ticket</td><td>Add €525–€645 <em>per person</em> to attend</td><td class="col-punk">Local demo day; free to present</td></tr>
+        <tr><td>What you keep</td><td>A one-off team wiki, often unmaintained</td><td class="col-punk">A documented, kept portfolio project + a network</td></tr>
+        <tr><td>Who wins</td><td>Structurally favors well-funded universities</td><td class="col-punk">Favors whoever builds the best thing that week</td></tr>
+      </tbody>
+    </table>
+    <div class="note note--warn" style="margin-top:26px">
+      <span class="kicker" style="color:var(--amber)">In their own words</span>
+      A University of Waterloo iGEM team wrote a public critique of their own competition: <em>"Compared to most other university-level team competitions… iGEM is incredibly expensive… requiring such a high barrier of entry only serves to keep this opportunity from those who cannot [afford it]."</em> Even an MIT team's 2018 budget hit <strong>$74,592</strong> — "if a well-resourced school like MIT has trouble finding funding, I can't imagine what it's like at smaller schools."
+    </div>
+    <p class="mono" style="font-size:.82rem;color:var(--muted);margin-top:14px">// Biopunk's own event copy says it plainly: "You saw the price tag of iGEM and decided it wasn't for you."</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section">
+  <div class="wrap">
+    <span class="kicker">The_thesis</span>
+    <h2>Keep the outcomes. Invert the economics.</h2>
+    <p class="lead">Biopunk is not anti-iGEM. It's iGEM's outcomes — the network, the portfolio, the industry pipeline — delivered through a hackathon's accessible, repeatable, get-paid-to-win economics.</p>
+    <div class="grid grid-3" style="margin-top:34px">
+      <div class="card"><div class="card__ico">🔓</div><h3>Remove the paywall</h3><p>No entry fee, ever. The reagents that make wet-lab work expensive are covered by in-kind sponsorship, not the participant's wallet.</p></div>
+      <div class="card"><div class="card__ico">🎓</div><h3>Remove the PhD gate</h3><p>No faculty sponsor required. A licensed community lab and a safety officer replace the institutional keycard.</p></div>
+      <div class="card"><div class="card__ico">🧬</div><h3>Keep every project</h3><p>Public galleries turn each build into a permanent portfolio piece — the compounding, GitHub-style record biology has lacked.</p></div>
+    </div>
+    <div class="note note--blood">
+      <span class="kicker kicker--blood">The one line</span>
+      <strong>iGEM spent 20 years proving that hands-on team synbio creates talent, portfolios, and companies. Biopunk simply removes the paywall and the PhD gate — and pays participants instead of charging them.</strong>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section" style="background:var(--bg-2)">
+  <div class="wrap">
+    <span class="kicker">It_already_works</span>
+    <h2>The model isn't hypothetical</h2>
+    <div class="grid grid-3" style="margin-top:30px">
+      <div class="card"><div class="card__num">$15K+</div><h3>People get paid</h3><p>Real Biopunk editions have put up $15,000+ in cash and in-kind prizes; BioViz 2025 ran a $5k pool. Cambridge's CUTEC Bio-Hackathon and the $125k Bio×AI Hackathon prove paying builders scales.</p></div>
+      <div class="card"><div class="card__num">168</div><h3>People show up</h3><p>The June 2025 Biopunk Hackathon drew 168 organisms over 10 days. The format packs rooms — no five-figure invoice required to walk in.</p></div>
+      <div class="card"><div class="card__num">Even iGEM</div><h3>Validates the format</h3><p>iGEM now runs its own "Startups BioHackathon" — a 48-hour weekend pitch event. The format is recognized as valuable; it's just bolted onto the paid competition instead of being the free on-ramp.</p></div>
+    </div>
+    <p class="lead" style="margin-top:34px">What's missing everywhere else is the middle: most "biohackathons" stop at slideware. Biopunk's subsidized <span class="hl">lab week</span> is the piece that turns a pitch into a result.</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <span class="kicker">Sourcing</span>
+    <h2>Where the numbers come from</h2>
+    <p class="lead">Every load-bearing claim is traceable. Key sources:</p>
+    <div class="grid grid-2" style="margin-top:24px">
+      <div class="card"><h3>iGEM costs &amp; model</h3><p style="font-size:.9rem">iGEM Fees &amp; Deadlines (competition.igem.org/registration/fees); Waterloo iGEM 2015 self-critique; Teague Lab / MIT 2018 budget ($74,592); iGEM Innovation ecosystem (300+ ventures, 100k alumni).</p></div>
+      <div class="card"><h3>Format, events &amp; thesis</h3><p style="font-size:.9rem">MLH Organizer Guide (guide.mlh.io, CC-BY); real Biopunk event pages (biopunklab.com / Luma); community-lab pricing; Plasmidsaurus &amp; Twist/IDT lead times; CUTEC &amp; Bio×AI prize data.</p></div>
+    </div>
+    <p class="mono" style="font-size:.82rem;color:var(--muted);margin-top:20px">// iGEM 2026 fees are charged in euros and staged (Stage I + Stage II + per-person Stage III Jamboree tickets). Verified against the official iGEM fees page, Aug 2026.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="cta-band">
+      <h2>Agree? Build one.</h2>
+      <p>The fastest way to change how biology is learned is to hand someone a bench and a deadline. Start with the playbook.</p>
+      <div class="hero__cta" style="justify-content:center">
+        <a href="host.html" class="btn btn--primary">Host a biohackathon →</a>
+        <a href="get-involved.html" class="btn btn--ghost">Join the movement</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <a href="index.html" class="brand" style="margin-bottom:14px">
+          <svg class="brand__mark" viewBox="0 0 40 40" fill="none"><rect x="1.5" y="1.5" width="37" height="37" rx="8" fill="#0c0f07" stroke="#b8f21a" stroke-width="1.4"/><g stroke="#b8f21a" stroke-width="2" stroke-linecap="round"><path d="M20 20 20 12.5M20 20 13.2 24.8M20 20 26.8 24.8"/></g><g fill="#b8f21a"><circle cx="20" cy="20" r="2.4"/><circle cx="20" cy="11.5" r="3.3"/><circle cx="12.4" cy="25.3" r="3.3"/><circle cx="27.6" cy="25.3" r="3.3"/></g></svg>
+          <span class="brand__txt"><span class="bio">BIOPUNK</span><span class="lab">LAB</span></span>
+        </a>
+        <p class="footer__note">Get paid to build biology. No PhD, no entry fee, ever. Curiosity &gt; credentials.</p>
+      </div>
+      <div><h5>Explore</h5><a href="format.html">The Format</a><a href="tracks.html">Tracks</a><a href="host.html">Host Yours</a><a href="manifesto.html">Why Biopunk</a><a href="faq.html">FAQ</a></div>
+      <div><h5>Organizers</h5><a href="host.html#timeline">Timeline</a><a href="host.html#sponsorship">In-kind sponsorship</a><a href="host.html#safety">Biosafety</a><a href="host.html#judging">Judging</a></div>
+      <div><h5>Connect</h5><a href="https://discord.gg/RqJb58Fh" target="_blank" rel="noopener">Discord</a><a href="https://www.biopunklab.com/" target="_blank" rel="noopener">biopunklab.com</a><a href="get-involved.html">Join the movement</a></div>
+    </div>
+    <div class="footer__base"><span>© 2026 Biopunk Lab — all organisms reserved</span><span>Built on the shoulders of MLH + iGEM</span></div>
+  </div>
+</footer>
+
+</body>
+</html>

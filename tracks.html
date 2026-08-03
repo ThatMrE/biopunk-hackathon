@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tracks — Biopunk Lab</title>
+<meta name="description" content="The challenge tracks teams build against at a Biopunk hackathon — AI × cognition, health & longevity, diagnostics & biosensors, biomanufacturing, DeSci tooling, and open hardware — all scoped to be buildable in a week at BSL-1.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=JetBrains+Mono:wght@400;500;700&family=Permanent+Marker&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>☣</text></svg>">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="brand">
+      <svg class="brand__mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1.5" y="1.5" width="37" height="37" rx="8" fill="#0c0f07" stroke="#b8f21a" stroke-width="1.4"/><g stroke="#b8f21a" stroke-width="2" stroke-linecap="round"><path d="M20 20 20 12.5M20 20 13.2 24.8M20 20 26.8 24.8"/></g><g fill="#b8f21a"><circle cx="20" cy="20" r="2.4"/><circle cx="20" cy="11.5" r="3.3"/><circle cx="12.4" cy="25.3" r="3.3"/><circle cx="27.6" cy="25.3" r="3.3"/></g></svg>
+      <span class="brand__txt"><span class="bio">BIOPUNK</span><span class="lab">LAB</span></span>
+    </a>
+    <button class="menu-btn" onclick="document.getElementById('nl').classList.toggle('show')">☰</button>
+    <div class="nav__links" id="nl">
+      <a href="index.html">Home</a>
+      <a href="format.html">Format</a>
+      <a href="tracks.html" class="active">Tracks</a>
+      <a href="host.html">Host Yours</a>
+      <a href="manifesto.html">Why Biopunk</a>
+      <a href="get-involved.html">Join</a>
+      <a href="faq.html">FAQ</a>
+      <a href="host.html" class="btn btn--primary btn--sm">Plug In →</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" style="padding-bottom:34px">
+  <div class="wrap">
+    <span class="kicker">Enhancement_vectors</span>
+    <h1>Pick a lane.<br><span class="hl">Build something living.</span></h1>
+    <p class="hero__sub">Tracks drop at the prototype-weekend kickoff — often owned by a sponsor who supplies the challenge, the reagents, and a judge. Every track is scoped so a winning idea is <em>buildable in one week at a BSL-1 bench.</em> Teams pick one.</p>
+  </div>
+</header>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="grid grid-3">
+      <div class="card"><div class="card__ico">🎯</div><h3>Sponsor-owned</h3><p>A company owns a track: writes the challenge, funds the prize, supplies in-kind reagents, sends a mentor/judge. Past editions: Biosecurity by <strong>Pilgrim</strong>, workshops by <strong>Seanome</strong>.</p></div>
+      <div class="card"><div class="card__ico">🧪</div><h3>One-week feasible</h3><p>Prompts are framed so the winning design can be built from stock or rush parts and validated by demo day. A tight prompt keeps every team inside the week.</p></div>
+      <div class="card"><div class="card__ico">☣</div><h3>BSL-1 by design</h3><p>Every track lives inside the biosafety envelope: non-human, non-clinical, well-characterized organisms. The gate is baked into the challenge.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section">
+  <div class="wrap">
+    <span class="kicker">Track_menu</span>
+    <h2>The vectors</h2>
+    <p class="lead">A starter menu drawn from real Biopunk editions (Longevity × AI, Robotics, Biosecurity, DeSci, bio-imaging) plus the classic buildable synbio lanes. Adapt to your city, your sponsors, and a regional problem.</p>
+
+    <div style="margin-top:34px">
+
+      <div class="track">
+        <div class="track__head"><span class="track__no">01</span></div>
+        <h3>🧠 AI + Cognition</h3>
+        <p class="track__desc">Merge silicon and grey matter. Neurofeedback loops, AI-assisted design and decision-making, cognitive amplifiers, brain–computer symbiosis. Where compute meets the mind.</p>
+        <div class="track__label">Buildable in a week</div>
+        <div class="pills"><span class="pill"><b>▸</b> AI-assisted protein/sequence design → order → express</span><span class="pill"><b>▸</b> Neurofeedback or biosignal prototype</span><span class="pill"><b>▸</b> A software tool other teams can use</span></div>
+        <div class="track__spons">Sponsors: <b>AWS · GCP · Modal</b> (compute), <b>Benchling</b> · Special prize: <b>Best Use of AI</b> (disclosed)</div>
+      </div>
+
+      <div class="track">
+        <div class="track__head"><span class="track__no">02</span></div>
+        <h3>⏳ Health + Longevity</h3>
+        <p class="track__desc">Push the biological machine past its factory settings. Biometrics, longevity protocols, recovery optimization, aging biology, ECM imaging — the through-line of Biopunk's BioViz and Human Enhancement editions.</p>
+        <div class="track__label">Buildable in a week</div>
+        <div class="pills"><span class="pill"><b>▸</b> A biometric/wearable readout</span><span class="pill"><b>▸</b> Real-time imaging/visualization rig</span><span class="pill"><b>▸</b> An aging-related reporter assay</span></div>
+        <div class="track__spons">Sponsors: <b>Vitalist Bay</b>, longevity funds · Special prize: <b>Best Longevity Hack</b></div>
+      </div>
+
+      <div class="track">
+        <div class="track__head"><span class="track__no">03</span></div>
+        <h3>🔬 Diagnostics + Biosensors</h3>
+        <p class="track__desc">Engineer cells or cell-free systems that <strong>detect something and report it</strong> — a contaminant, a metabolite, a signal — with a colour or fluorescence you can read by eye or plate reader.</p>
+        <div class="track__label">Buildable in a week</div>
+        <div class="pills"><span class="pill"><b>▸</b> Reporter constructs (GFP/RFP/lacZ)</span><span class="pill"><b>▸</b> Inducible promoter characterization</span><span class="pill"><b>▸</b> Cell-free paper-strip sensor</span></div>
+        <div class="track__spons">Sponsors: <b>Twist</b>, <b>IDT</b>, <b>Benchling</b> · Special prize: <b>Best Biosensor</b></div>
+      </div>
+
+      <div class="track">
+        <div class="track__head"><span class="track__no">04</span></div>
+        <h3>🧫 Biomanufacturing + Living Materials</h3>
+        <p class="track__desc">Engineer a microbe to <strong>make a molecule</strong> — a pigment, flavour, fragrance, protein, or living material. Biohack mycelium, brew a dye, grow something that shouldn't exist yet.</p>
+        <div class="track__label">Buildable in a week</div>
+        <div class="pills"><span class="pill"><b>▸</b> Pigment production (violacein, carotenoids)</span><span class="pill"><b>▸</b> Small-scale protein expression</span><span class="pill"><b>▸</b> Mycelium / living-material prototype</span></div>
+        <div class="track__spons">Sponsors: food-tech, fermentation &amp; ingredients firms · Special prize: <b>Best Bioproduct</b></div>
+      </div>
+
+      <div class="track">
+        <div class="track__head"><span class="track__no">05</span></div>
+        <h3>🛰 DeSci + Open Science Tooling</h3>
+        <p class="track__desc">From the Biopunk DeSci edition: citizen-led trials, remote wet-lab automation, peer-to-peer publishing, DAO-governed science, on-chain lab protocols, decentralized environmental sensing.</p>
+        <div class="track__label">Buildable in a week</div>
+        <div class="pills"><span class="pill"><b>▸</b> An open protocol / provenance tool</span><span class="pill"><b>▸</b> Remote lab-automation demo</span><span class="pill"><b>▸</b> Environmental sensing rig</span></div>
+        <div class="track__spons">Sponsors: <b>MuseMatrix</b>, <b>Causality Network</b> · Special prize: <b>Best DeSci Tool</b></div>
+      </div>
+
+      <div class="track">
+        <div class="track__head"><span class="track__no">06</span></div>
+        <h3>🔧 Interfaces, Wearables &amp; Open Hardware</h3>
+        <p class="track__desc">New ways for meat to talk to metal — plus the tools that lower the barrier itself. Sensor rigs, experimental wearables, DIY bio hardware, low-cost lab instruments, robotics (40+ SO101 arms on tap).</p>
+        <div class="track__label">Buildable in a week</div>
+        <div class="pills"><span class="pill"><b>▸</b> A sub-$50 instrument replacing a $300+ one</span><span class="pill"><b>▸</b> An OT-2 automation protocol</span><span class="pill"><b>▸</b> A wearable / haptic / robotics prototype</span></div>
+        <div class="track__spons">Sponsors: <b>Opentrons</b>, <b>Oxford Nanopore</b>, robotics partners · Special prize: <b>Best Open Hardware</b></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section" style="background:var(--bg-2)">
+  <div class="wrap">
+    <span class="kicker kicker--blood">Cross-cutting</span>
+    <h2>Special prizes any team can win</h2>
+    <p class="lead">Beyond the track winners, borrow iGEM's opt-in special-prize structure — awards that reward good practice regardless of track, and keep the event welcoming to newcomers.</p>
+    <div class="roster">
+      <div class="rost"><b>Best Responsible Innovation</b><span>Strongest biosafety &amp; societal thinking</span></div>
+      <div class="rost"><b>Best Measurement</b><span>Most rigorous, well-quantified data</span></div>
+      <div class="rost"><b>Best Documentation</b><span>Clearest, most reproducible write-up</span></div>
+      <div class="rost"><b>Best Beginner Team</b><span>Strongest first-time-team project</span></div>
+      <div class="rost"><b>People's Choice</b><span>Voted by participants &amp; the public</span></div>
+      <div class="rost"><b>Best Use of [Sponsor Tool]</b><span>Tool sponsors fund their own prize</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="cta-band">
+      <h2>Design your own tracks.</h2>
+      <p>The host kit shows how to line up sponsor-owned tracks and scope prompts so every team can actually ship by demo day.</p>
+      <div class="hero__cta" style="justify-content:center">
+        <a href="host.html#sponsorship" class="btn btn--primary">See sponsor tracks →</a>
+        <a href="faq.html" class="btn btn--ghost">Read the FAQ</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <a href="index.html" class="brand" style="margin-bottom:14px">
+          <svg class="brand__mark" viewBox="0 0 40 40" fill="none"><rect x="1.5" y="1.5" width="37" height="37" rx="8" fill="#0c0f07" stroke="#b8f21a" stroke-width="1.4"/><g stroke="#b8f21a" stroke-width="2" stroke-linecap="round"><path d="M20 20 20 12.5M20 20 13.2 24.8M20 20 26.8 24.8"/></g><g fill="#b8f21a"><circle cx="20" cy="20" r="2.4"/><circle cx="20" cy="11.5" r="3.3"/><circle cx="12.4" cy="25.3" r="3.3"/><circle cx="27.6" cy="25.3" r="3.3"/></g></svg>
+          <span class="brand__txt"><span class="bio">BIOPUNK</span><span class="lab">LAB</span></span>
+        </a>
+        <p class="footer__note">Get paid to build biology. No PhD, no entry fee, ever. Curiosity &gt; credentials.</p>
+      </div>
+      <div><h5>Explore</h5><a href="format.html">The Format</a><a href="tracks.html">Tracks</a><a href="host.html">Host Yours</a><a href="manifesto.html">Why Biopunk</a><a href="faq.html">FAQ</a></div>
+      <div><h5>Organizers</h5><a href="host.html#timeline">Timeline</a><a href="host.html#sponsorship">In-kind sponsorship</a><a href="host.html#safety">Biosafety</a><a href="host.html#judging">Judging</a></div>
+      <div><h5>Connect</h5><a href="https://discord.gg/RqJb58Fh" target="_blank" rel="noopener">Discord</a><a href="https://www.biopunklab.com/" target="_blank" rel="noopener">biopunklab.com</a><a href="get-involved.html">Join the movement</a></div>
+    </div>
+    <div class="footer__base"><span>© 2026 Biopunk Lab — all organisms reserved</span><span>Built on the shoulders of MLH + iGEM</span></div>
+  </div>
+</footer>
+
+</body>
+</html>
