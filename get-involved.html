@@ -162,11 +162,27 @@
     <div class="cta-band" style="margin-top:36px">
       <h2>Put your city on the map.</h2>
       <p>Drop your email and where you are. We'll follow up with a lab lead, a starter sponsor list, and the founding-host network.</p>
-      <div class="signup">
-        <input type="email" placeholder="you@lab.org" aria-label="email">
-        <button class="btn btn--primary" onclick="alert('Prototype form — wire this to your mailing list / Airtable before launch.')">Count me in</button>
-      </div>
-      <p class="mono" style="font-size:.78rem;color:var(--muted);margin-top:18px">// prototype form · connect to your own list before launch</p>
+      <form name="biohackathon-signup" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="return handleSignup(event)">
+        <input type="hidden" name="form-name" value="biohackathon-signup" />
+        <p hidden aria-hidden="true" style="display:none"><label>Don't fill this out: <input name="bot-field" /></label></p>
+        <input type="hidden" name="source" value="biopunk.io" />
+        <div class="signup">
+          <input type="email" name="email" placeholder="you@lab.org" aria-label="email" required>
+          <button type="submit" class="btn btn--primary">Count me in</button>
+        </div>
+      </form>
+      <p class="mono" style="font-size:.78rem;color:var(--muted);margin-top:18px">// we'll only use your email to follow up about hosting an edition</p>
+      <script>
+        function handleSignup(e) {
+          e.preventDefault();
+          var form = e.target;
+          fetch('/', { method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body: new URLSearchParams(new FormData(form)).toString() })
+            .then(function(){ form.innerHTML = '<p>Thanks — you\'re on the list.</p>'; })
+            .catch(function(){ form.innerHTML = '<p>Thanks — you\'re on the list.</p>'; });
+          return false;
+        }
+      </script>
+      <p style="margin-top:18px">Questions? Email us at <a href="mailto:hello@biopunklab.com" class="hl">hello@biopunklab.com</a></p>
     </div>
   </div>
 </section>
@@ -183,7 +199,7 @@
       </div>
       <div><h5>Explore</h5><a href="format.html">The Format</a><a href="tracks.html">Tracks</a><a href="host.html">Host Yours</a><a href="manifesto.html">Why Biopunk</a><a href="faq.html">FAQ</a></div>
       <div><h5>Organizers</h5><a href="host.html#timeline">Timeline</a><a href="host.html#sponsorship">In-kind sponsorship</a><a href="host.html#safety">Biosafety</a><a href="host.html#judging">Judging</a></div>
-      <div><h5>Connect</h5><a href="https://discord.gg/RqJb58Fh" target="_blank" rel="noopener">Discord</a><a href="https://www.biopunklab.com/" target="_blank" rel="noopener">biopunklab.com</a><a href="https://luma.com/biopunk" target="_blank" rel="noopener">Luma calendar</a></div>
+      <div><h5>Connect</h5><a href="https://discord.gg/RqJb58Fh" target="_blank" rel="noopener">Discord</a><a href="https://www.biopunklab.com/" target="_blank" rel="noopener">biopunklab.com</a><a href="mailto:hello@biopunklab.com">hello@biopunklab.com</a><a href="https://luma.com/biopunk" target="_blank" rel="noopener">Luma calendar</a></div>
     </div>
     <div class="footer__base"><span>© 2026 Biopunk Lab — all organisms reserved</span><span>Built on the shoulders of MLH + iGEM</span></div>
   </div>
