@@ -56,21 +56,21 @@ The included `.nojekyll` file tells Pages to serve everything as-is.
 ### C) Vercel (matches your original host)
 1. [vercel.com/new](https://vercel.com/new) → **Import** your GitHub repo.
 2. Framework Preset: **Other** · Build Command: *none* · Output Directory: `./`
-3. **Deploy.** (`vercel.json` is included.)
+3. **Deploy.** The repo includes `vercel.json`.
 
 ### D) Netlify
 1. [app.netlify.com](https://app.netlify.com) → **Add new site → Import from Git**.
 2. Build command: *none* · Publish directory: `.`
-3. **Deploy.** (`netlify.toml` is included.)
+3. **Deploy.** The repo includes `netlify.toml`.
 
 ## Custom domain
 - **GitHub Pages:** add a `CNAME` file containing your domain (e.g. `biopunklab.com`), then set DNS per GitHub's docs.
 - **Vercel / Netlify:** add the domain in the dashboard and follow the DNS prompts.
 
 ## Before you go live
-- **Email signup forms are prototype stubs** (they pop an alert). Wire them to your list — Mailchimp/ConvertKit embed, a Netlify form (`<form netlify>`), Formspree, or an Airtable form — before launch.
+- **The email signup forms are prototype stubs.** They pop an alert. Wire them to your list — Mailchimp/ConvertKit embed, a Netlify form (`<form netlify>`), Formspree, or an Airtable form — before launch.
 - Real external links already point to your **Discord**, **biopunklab.com**, and **Luma** calendar.
-- Fonts (Bungee, JetBrains Mono, Permanent Marker, Space Grotesk) load from Google Fonts; they fall back to system fonts offline.
+- Fonts (Bungee, JetBrains Mono, Permanent Marker, Space Grotesk) load from Google Fonts. Offline, they fall back to system fonts.
 
 ## Credits
 Design language modeled on the Biopunk Lab event site. Host playbook adapted from the **MLH Hackathon Organizer Guide** (CC-BY). Built on the shoulders of MLH + iGEM.
